@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+<script >
+
+
+     function rom()
+     {
+
+        v="0213456789";
+        s=frm.mbno.value;
+        n=s.length;
+        b=true;
+        for(i=0;i<n;i++)
+        {
+            if(v.indexOf(s.charAt(i))==-1)
+            {
+               b=false;
+               alert(" Mobile no,Digits only plzzz....!");
+               frm.mbno.value="";
+               break;
+            }
+        }
+        if(n<10)
+        {
+            alert("Mobile no. must be 10 digits..!")
+        }
+        if(b==true)
+        {
+             //frm.action="#";
+            frm.submit();
+        }
+     }
+
+     function ros()
+     {
+          frm.reset();
+     }
+
+</script>
+
+<title>Job Application Form</title>
+  <style>
+  .button{
+      background-color: #FF4B1F;
+      color: #FFFFFF;
+      border-radius:10px;
+      text-align: center;
+      padding:10px 30px;
+      display: inline-block;
+  }
+  .button1{
+      background-color: #61C200;
+      color: #FFFFFF;
+      border-radius:10px;
+      text-align: center;
+      padding:10px 30px;
+      display: inline-block;
+  }
+  .button1:hover
+  {
+      background-color: #99FF00;
+  }
+   .button:hover
+  {
+      background-color: #F5B800;
+  }
+
+ </style>
+
+
+
+ </head>
+
+<body bgcolor=gray>
+
+    <CENTER>
+        <p>&nbsp;
+        <form  method=post  name="frm" action="">
+    <table border=0 style='border-collapse:collapse' bgcolor=" #FFFFB2"border=0 width=50% height=70%>
+    <tr>
+    <td bgcolor=" white" align=center colspan=2><h1><img src="learnovate3.png" width="200" height="170"></td>
+    </tr>
+    <tr>
+        <td colspan=2 align=center bgcolor=" #7DA8D4"><h4>job Application form</h4></td>
+
+    </tr>
+    <tr>
+        <td><p></td>
+    </tr>
+    <tr>
+        <td><b>&nbsp;First name:</b><br><center><input type="text" value="First name" name=fnm required><p></td>
+        <td><b>&nbsp;Last name:</b><br><center><input type="text" value="Last name" name=lnm required><p></td>
+
+    </tr>
+
+    <tr>
+         <td><b>&nbsp;Email ID:</b><br><center><input type="email" value="example@2020@gmail.com" name=eml required><p></td>
+         <td><b>&nbsp;Mob no:</b><br><center><input type="tel" value="xxxxxxxxxx" name=mbno required><p></td>
+    </tr>
+    <tr>
+        <td><b>&nbsp;Age:</b><br><center><input type="number" name=age required><p></td>
+        <td><b>&nbsp;DOB:</b><br><center><input type="DATE" name=dob required style="width:56%"><p></td>
+    </tr>
+    <tr>
+        <td colspan=2 ><b>&nbsp;Gender:</b><br>
+        <center>
+        <input type="radio" name=sx align=center>Male
+        <input type="radio" name=sx align=center>Female
+        <input type="radio" name=sx align=center>Others
+        <p>
+        </td>
+    </tr>
+        <tr>
+            <td colspan=2><b>&nbsp;Country:</b><br>
+            <center>
+            <select name="country" style="width:80%;">
+                 <option value="India">India</option>
+                <option value="America">America</option>
+                <option value="Canada">Canada</option>
+            </select>
+            <p>
+            </td>
+        </tr>
+        <tr>
+            <td><b>&nbsp;State:</b><br><center><input type="text" name=st ><p></td>
+            <td><b>&nbsp;City:</b><br><center><input type="text" name=ct ><p></td>
+        </tr>
+        <tr>
+
+            <td colspan=2><b>&nbsp;Select Position:</b><br>
+            <center>
+            <select name="position" style="width:80%;" required>
+                <option >choose desired position</option>
+                 <option value="fweb">Front-end Web Developer</option>
+                 <option value="bweb">Back-end Web Developer</option>
+                <option value="data">Data Analyst</option>
+                <option value="hr">Human Resource</option>
+                <option value="finance">Finance</option>
+                <option>
+            </select>
+            <p>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan=2 ><b>&nbsp;Address:</b><br><center><input type="text" name=address size=55 align=center value="Address"><p></td>
+        </tr>
+        <tr>
+            <td colspan=2><b>&nbsp;Additional Info:</b><br>
+            <center>
+            <textarea name="info" rows=4 cols=57>&nbsp;Additional Info</textarea><p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2 align=center><b>&nbsp;Add your CV/Resume:</b><input type="file" name="file" required><p></td>
+        </tr>
+        <tr>
+        <td align=center><input type="button"  class="button" value="Reset" onclick="ros()" ><p></td>
+        <td align=center><input type="button" class="button1" value="Send"  onclick="rom()" ><p></td>
+
+        </tr>
+    </table>
+        </form>
+        <p>&nbsp;
+        <font color=" #FFFF99">&copy;2021 job Application Form Learnovate Ecommerce.All Rights Reserved | Design by Romesh.</font>
+
+
+
+
+
+
+</body>
+</html>
